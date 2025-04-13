@@ -1,0 +1,133 @@
+.header{
+    position: relative;
+    top: 0;
+    z-index: 2;
+    .position{
+        position: absolute;
+        top: 24px;
+        width: 1720px;
+        @media(max-width:1760px){
+            width: 1560px;
+        }
+        @media(max-width:1600px){
+            width: 1460px;
+        }
+        @media#{$biglaptop}{
+            width: 1360px;
+        }
+        @media#{$laptop}{
+            width: 1160px;
+        }
+        @media#{$smalllaptop}{
+            width: 952px;
+        }
+        @media#{$bigtap}{
+            width: 728px;
+        }
+        @media#{$tap}{
+            width: 536px;
+            top: 7px;
+        }
+        @media#{$bigmobile}{
+            width: 440px;
+        }
+        @media#{$mabile}{
+            width: calc(100% - 40px);
+            margin: 0 auto;
+            text-align: center;
+            padding-right:20px ;
+        }
+
+    }
+    &__start{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &--logo{
+            a{
+                img{
+                    @media#{$smalllaptop}{
+                        width: 80px;
+                    }
+                    @media#{$bigtap}{
+                        width: 60px;
+                    }
+                    @media#{$tap}{
+                        width: 29px;
+                    }
+                    @media#{$mabile}{
+                        width: 50px;
+                    }
+                }
+            }
+        }
+        &--nav{
+            display: flex;
+            align-items: center;
+            gap:0 140px;
+            list-style: none;
+            @media#{$laptop}{
+                gap:0 60px;
+            }
+            @media#{$bigtap}{
+                gap:0 45px;
+            }
+            @media#{$tap}{
+                gap:0 43px;
+            }
+            @media#{$mabile}{
+                display: none;
+            }
+
+            li{
+                a{
+                    display: flex;
+                    align-items: center;
+                    gap:0 8px;
+                    text-decoration: none;
+                    color: #FFF;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    @media#{$bigtap}{
+                        font-size: 11px;
+                    }
+                    @media#{$tap}{
+                        font-size: 5px;
+                        line-height: 7px;
+                        gap:0 2px;
+                    }
+                    img{
+                        @media#{$smalllaptop}{
+                            width: 20px;
+                        }
+                        @media#{$bigtap}{
+                            width: 15px;
+                        }
+                        @media#{$tap}{
+                            width: 7px;
+                        }
+                        @media#{$mabile}{
+                            width: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        &--menu{
+            a{
+                img{
+                    @media#{$smalllaptop}{
+                        width: 20px;
+                    }
+                    @media#{$bigtap}{
+                        width: 15px;
+                    }
+                    @media#{$tap}{
+                        width: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

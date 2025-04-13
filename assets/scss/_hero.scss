@@ -1,0 +1,142 @@
+.hero{
+    .swiper{
+        height: 100vh;
+        width: 100%;
+        @media#{$bigtap}{
+            height: 600px;
+        }
+        @media#{$tap}{
+            height: 335px;
+        }
+        @media#{$mabile}{
+            height: 265px;
+        }
+        .swiper-slide{
+            position: relative;
+            &::after{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                z-index: 2;
+                content: '';
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 30%, rgba(0, 0, 0, 0.80) 100%);
+                background-position: center;
+                background-size: cover;
+            }
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .container{
+        position: relative;
+    }
+    &__start{
+        padding-bottom: 52px;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+        width: 100%;
+        @media#{$bigtap}{
+            padding-bottom: 25px;
+        }
+        @media#{$tap}{
+            padding-bottom: 16px;
+        }
+        @media#{$mabile}{
+            padding-right: 12px;
+        }
+        
+        &--title{
+            color: #FFF;
+            font-size: 80px;
+            font-weight: 600;
+            line-height: 100px;
+            @media#{$bigtap}{
+                font-size: 46px;
+                line-height: 60px;
+            }
+            @media#{$tap}{
+                font-size: 25px;
+                line-height: 31px;
+            }
+        }
+        &--main{
+            margin-top: 16px;
+            color: #FFF;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 36px;
+            max-width: 704px;
+            @media#{$bigtap}{
+                font-size: 16px;
+                line-height: 20px;
+                max-width: 510px;
+            }
+            @media#{$tap}{
+                font-size: 7px;
+                line-height: 11px;
+                margin-top: 5px;
+                max-width: 218px;
+            }
+        }
+        &--button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 40px;
+            @media#{$bigtap}{
+                margin-top: 14px;
+            }
+            @media#{$tap}{
+                margin-top: 12px;
+            }
+            .swiper-button{
+                display: flex;
+                align-items: center;
+                gap:0 16px;
+                .akm{
+                    width: 72px;
+                    height: 56px;
+                    border-radius: 100px;
+                    background-color: rgba(255, 255, 255, 0.10);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    @media#{$tap}{
+                        width: 22px;
+                        height: 17px;
+                        border-radius: 31px;
+                        background-size: 7px;
+                    }
+                }
+                &-left{
+                    background-image: url(../img/swiper-button-left.svg);
+                }
+                &-right{
+                    background-image: url(../img/swiper-button-right.svg);
+                }
+            }
+        }
+        .swiper-scrollbar{
+            margin-top: 40px;
+            position: static;
+            height: 8px;
+            border-radius: 0;
+            @media#{$bigtap}{
+                margin-top: 14px;
+            }
+            @media#{$tap}{
+                height: 3px;
+                margin-top: 12px;
+            }
+            &-drag{
+                background-color: #fff;
+                border-radius: 0;
+            }
+        }
+    }
+}

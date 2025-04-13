@@ -1,0 +1,227 @@
+.rest{
+    margin-top: 200px;
+    @media#{$bigtap}{
+        margin-top: 60px;
+    }
+    @media#{$mabile}{
+        margin-top: 25px;
+    }
+    .title{
+        max-width: 705px;
+        @media#{$tap}{
+            max-width: 218px;
+        }
+    }
+    .col-3,
+    .col-2{
+        position: relative;
+        .bottom{
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    .main{
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+        margin-top: 24px;
+        @media#{$bigtap}{
+            font-size:15px ;
+            line-height: 20px;
+            margin-top: 12px;
+        }
+        @media#{$tap}{
+            font-size: 7px;
+            line-height: 11px;
+            margin-top: 7px;
+        }
+    }
+    &__link{
+        overflow: hidden;
+        margin-top: 80px;
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+        white-space: nowrap;
+        position: relative;
+        @media#{$bigtap}{
+            margin-top: 30px;
+        }
+        @media#{$tap}{
+            margin-top: 24px;
+            gap:0 6px;
+        }
+        .scrolling-text{
+            display: flex;
+            gap:0 20px;
+            align-items: center;
+            animation: scrollText 10s linear infinite;
+            @media#{$tap}{
+                gap:0 6px;
+            }
+            @keyframes scrollText {
+                from {
+                    transform: translateX(0);
+                }
+                to {
+                    transform: translateX(calc(-100% - 20px));
+                }
+            }
+        }
+        a{
+            text-decoration: none;
+            border-radius: 100px;
+            background: rgba(255, 255, 255, 0.10);
+            padding: 40px 52px;
+            color: #FFB833;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 52px;
+            transition: .3s all ease;
+            @media#{$bigtap}{
+                padding: 12px 30px;
+                font-size: 18px;
+                line-height: 28px;
+
+            }
+            @media#{$tap}{
+                padding: 12px 16px;
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+    &__cards{
+        margin-top: 80px;
+        --bs-gutter-x: 20px;
+        gap: 20px 0;
+        @media#{$bigtap}{
+            margin-top: 30px;
+            --bs-gutter-x:10px;
+            gap:10px 0;
+        }
+        @media#{$tap}{
+            margin-top: 24px;
+        }
+        .img{
+            position: relative;
+            a{
+                text-decoration: none;
+                border-radius: 100px;
+                background: rgba(19, 19, 19, 0.60);
+                backdrop-filter: blur(8px);
+                padding: 16px;
+                color: #FFB833;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20px;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                @media#{$laptop}{
+                    padding: 10px;
+                    font-size: 10px;
+                    top: 14px;
+                    left: 14px;
+                    @media#{$bigtap}{
+                        padding: 6px;
+                        font-size: 6px;
+                        top: 6px;
+                        left: 6px;
+                        line-height: 8px;
+                    }
+                    @media#{$tap}{
+                        padding: 5px;
+                        font-size: 5px;
+                        line-height: 6px;
+                    }
+                    @media#{$mabile}{
+                        padding: 2px;
+                        font-size: 3px;
+                        line-height: 3px;
+                        top: 2px;
+                        left: 1px;
+                    }
+                }
+            }
+            img{
+                width: 100%;
+            }
+            .like{
+                display: flex;
+                align-items: center;
+                border-radius: 100px;
+                background: rgba(19, 19, 19, 0.60);
+                backdrop-filter: blur(8px);
+                gap: 0 4px;
+                color: #FFF;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20px;
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                padding: 16px;
+                @media#{$laptop}{
+                    bottom: 10px;
+                    left: 10px;
+                    font-size: 10px;
+                    padding: 10px;
+                }
+                @media#{$bigtap}{
+                    bottom: 6px;
+                    left: 6px;
+                    padding: 8px;
+                }
+                @media#{$tap}{
+                    font-size: 5px;
+                    line-height: 6px;
+                    padding: 5px;
+                    gap:0 1px;
+                }
+                svg{
+                    @media#{$bigtap}{
+                        width: 16px;
+                    }
+                    @media#{$tap}{
+                        width: 6px;
+                        height: 6px;
+                    }
+                }
+            }
+        }
+        .col-4{
+            position: relative;
+        }
+        .rist_title{
+            color: #FFF;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 40px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            @media#{$smalllaptop}{
+                font-size: 24px;
+                line-height: 32px;
+            }
+            @media#{$bigtap}{
+                font-size: 13px;
+                line-height: 20px;
+            }
+            @media#{$tap}{
+                font-size: 10px;
+                line-height: 12px;
+            }
+            @media#{$mabile}{
+                font-size: 6px;
+                line-height: 7px;
+            }
+
+            span{
+                color: #FFB833;
+            }
+        }
+    }
+}

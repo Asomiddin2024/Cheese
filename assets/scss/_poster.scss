@@ -1,0 +1,129 @@
+.poster{
+    margin-top: 100px;
+    @media#{$bigtap}{
+        margin-top: 40px;
+    }
+    @media#{$tap}{
+        margin-top: 30px;
+    }
+    &__cards{
+        margin-top: 60px;
+        --bs-gutter-x: 20px;
+        align-items: stretch;
+        @media#{$bigtap}{
+            margin-top:32px;
+            --bs-gutter-x:10px;
+        }
+        @media#{$tap}{
+            margin-top: 18px;
+        }
+        .link{
+            text-decoration: none;
+            &__img{
+                position: relative;
+                img{
+                    width: 100%;
+                }
+                .poster_logo{
+                    position: absolute;
+                    top: 24px;
+                    right: 24px;
+                    width: auto;
+                    @media#{$bigtap}{
+                        top: 12px;
+                        right: 12px;
+                        width: 50px;
+                    }
+                    @media#{$tap}{
+                        width: 32px;
+                        top: 7px;
+                        right: 7px;
+                    }
+                }
+            }
+            &__title{
+                margin-top: 24px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                align-self: stretch;
+                overflow: hidden;
+                color: #FFF;
+                text-overflow: ellipsis;
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 40px;
+                height: 80px;
+                @media#{$bigtap}{
+                    height: 50px;
+                    line-height: 24px;
+                    font-size: 20px;
+                    margin-top: 10px;
+                }
+                @media#{$tap}{
+                    font-size: 10px;
+                    line-height: 12px;
+                    margin-top: 7px;
+                    height: 23px;
+                }
+                @media#{$mabile}{
+                    font-family: 8px;
+                }
+            }
+        }
+        .card-main_title{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            align-self: stretch;
+            overflow: hidden;
+            color: #FFF;
+            text-overflow: ellipsis;
+            font-family: Manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            margin-top: 16px;
+            @media#{$bigtap}{
+                font-size: 12px;
+                line-height: 19px;
+                margin-top: 9px;
+
+            }
+            @media#{$tap}{
+                font-size: 5px;
+                line-height: 7px;
+                margin-top: 5px;
+            }
+        }
+        .card-main{
+            overflow: hidden;
+            color: rgba(255, 255, 255, 0.50);
+            text-overflow: ellipsis;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            margin-top: 16px;
+            @media#{$bigtap}{
+                font-size: 12px;
+                margin-top: 8px;
+            }
+            @media#{$tap}{
+                font-size: 5px;
+                line-height: 7px;
+                margin-top: 6px;
+            }
+        }
+    }
+    .button_a{
+        text-align: end;
+        margin-top: 60px;
+        @media#{$bigtap}{
+            margin-top: 28px;
+        }
+        @media#{$tap}{
+            margin-top: 19px;
+        }
+    }
+}

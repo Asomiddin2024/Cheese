@@ -1,0 +1,104 @@
+.news{
+    margin-top: 100px;
+    @media#{$bigtap}{
+        margin-top: 50px;
+    }
+    @media#{$tap}{
+        margin-top: 31px;
+    }
+    &__cards{
+        // padding: 80px;
+        background: #1D1D1D;
+        &--left,
+        &--right{
+            padding: 80px;
+            @media#{$smalllaptop}{
+                padding: 60px;
+            }
+            @media#{$bigtap}{
+                padding: 28px;
+            }
+            @media#{$tap}{
+                padding: 25px;
+            }
+            @media#{$mabile}{
+                padding: 5px;
+            }
+        }
+        &--left{
+            .main_title{
+                color: #FFF;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 36px;
+                margin-top: 24px;
+                @media#{$bigtap}{
+                    font-size: 14px;
+                    line-height: 22px;
+                    margin-top: 10px;
+                }
+                @media#{$tap}{
+                    font-size: 7px;
+                    line-height: 11px;
+                    margin-top: 7px;
+                }
+            }
+        }
+        &--right{
+            display: flex;
+            flex-direction: column;
+            gap:20px 0;
+            @media#{$bigtap}{
+                gap:15px 0;
+            }
+            input{
+                padding: 20px;
+                border-radius: 4px;
+                background: #282828;
+                border: none;
+                outline: none;
+                color: #B0B0B0;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;
+                @media#{$bigtap}{
+                    padding: 12px;
+                    font-size: 10px;
+                    line-height: 20px;
+                }
+                @media#{$tap}{
+                    font-size: 6px;
+                    line-height: 7px;
+                    padding: 6.2px;
+                }
+            }
+            button{
+                padding: 20px 0;
+                border-radius: 4px;
+                background: #CF3;
+                color: #111;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 24px;
+                border: none;
+                width: 186px;
+                transition: .3s all ease;
+                &:hover{
+                    background-color: rgba(255,255,255,0.1);
+                    color: #FFF;
+                }
+                @media#{$bigtap}{
+                    font-size: 12px;
+                    padding: 10px 0;
+                    width: 115px;
+                }
+                @media#{$tap}{
+                    font-size: 6px;
+                    line-height: 7px;
+                    padding: 7px 0;
+                    width: 60px;
+                }
+            }
+        }
+    }
+}

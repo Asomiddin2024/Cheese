@@ -1,0 +1,114 @@
+.footer{
+    margin-top: 100px;
+    padding-bottom: 20px;
+    @media#{$tap}{
+        margin-top: 31px;
+    }
+    @media#{$mabile}{
+        margin-top: 25px;
+    }
+    &__logo{
+        display: flex;
+        flex-direction: column;
+        gap:20px 0;
+        @media#{$tap}{
+            gap:7px 0;
+        }
+        a{
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            text-decoration: none;
+            @media#{$bigtap}{
+                font-size: 12px;
+                line-height: 18px;
+            }
+            @media#{$tap}{
+                font-size: 5px;
+                line-height: 7px;
+            }
+            @media#{$mabile}{
+                font-size: 4px;
+                line-height: 5px;
+            }
+            img{
+                width: 270px;
+                @media#{$smalllaptop}{
+                    width: 185px;
+                }
+                @media#{$bigtap}{
+                    width: 140px;
+                }
+                @media#{$tap}{
+                    width: 84px;
+                }
+                @media#{$mabile}{
+                    width: 50px;
+                }
+            }
+        }
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap:24px 0;
+        @media#{$bigtap}{
+            gap:12px 0;
+        }
+        @media#{$tap}{
+            gap:7px 0;
+        }
+        @media#{$mabile}{
+            gap:2px 0;
+        }
+        a{
+            text-decoration: none;
+            color: #FFF;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 32px;
+            @media#{$bigtap}{
+                font-size: 14px;
+                line-height: 18px;
+            }
+            @media#{$tap}{
+                font-size: 6px;
+                line-height: 10px;
+            }
+            @media#{$mabile}{
+                font-size: 5px;
+            }
+        }
+    }
+    &__word{
+        display: flex;
+        flex-direction: column;
+        gap:20px 0;
+        margin-top: 60px;
+        @media#{$bigtap}{
+            gap:12px 0;
+            margin-top: 25px;
+        }
+        @media#{$tap}{
+            gap:5px 0;
+            margin-top: 18px;
+        }
+        a{
+            color: #FFF;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            text-decoration: none;
+            @media#{$bigtap}{
+                font-size: 9px;
+                line-height: 12px;
+            }
+            @media#{$tap}{
+                font-size: 4px;
+                line-height: 6px;
+            }
+        }
+    }
+}

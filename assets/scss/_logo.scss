@@ -1,0 +1,58 @@
+.logo{
+    margin-top: 200px;
+    @media#{$bigtap}{
+        margin-top: 80px;
+    }
+    @media#{$tap}{
+        margin-top: 61px;
+    }
+    @media#{$mabile}{
+        margin-top: 25px;
+    }
+    &__cards{
+        align-items: center;
+        justify-content: center;
+        margin-top:142px ;
+        gap:150px 0;
+        @media#{$bigtap}{
+            margin-top: 65px;
+            gap:82px 0;
+        }
+        @media#{$tap}{
+            margin-top: 18px;
+            gap:35px 0;
+        }
+        @media#{$mabile}{
+            gap:24px 0;
+        }
+        a{
+            img{
+                @media#{$smalllaptop}{
+                    width: 180px;
+                }
+                @media#{$tap}{
+                    width: 96px;
+                }
+                @media#{$mabile}{
+                    width:75px ;
+                }
+            }
+        }
+        .col-4{
+            text-align: center;
+        }
+    }
+    .button_a{
+        margin-top: 137px;
+        text-align: right;
+        @media#{$bigtap}{
+            margin-top: 62px;
+        }
+        @media#{$tap}{
+            margin-top: 42px;
+        }
+        @media#{$mabile}{
+            margin-top: 10px;
+        }
+    }
+}

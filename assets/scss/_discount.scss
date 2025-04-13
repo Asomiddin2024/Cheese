@@ -1,0 +1,181 @@
+.discount{
+    margin-top: 200px;
+    @media#{$bigtap}{
+        margin-top: 58px;
+    }
+    @media#{$tap}{
+        margin-top: 62px;
+    }
+    @media#{$mabile}{
+        margin-top: 25px;
+    }
+    &__cards{
+        .col-6{
+            position: relative;
+        }
+        --bs-gutter-x: 20px;
+        margin-top: 60px;
+        @media#{$bigtap}{
+            --bs-gutter-x:10px;
+            margin-top: 35px;
+        }
+        @media#{$tap}{
+            margin-top: 18px;
+        }
+        &--card{
+            text-decoration: none;
+            // position: relative;
+            .position{
+                position: absolute;
+                bottom: 0;
+                padding: 40px;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%);
+                @media#{$bigtap}{
+                    padding: 24px;
+                }
+                @media#{$tap}{
+                    padding: 12px;
+                }
+            }
+            img{
+                width: 100%;
+            }
+            .height_width{
+                height: 100%;
+                object-fit: cover;
+            }
+            .main{
+                margin-top: 24px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                align-self: stretch;
+                overflow: hidden;
+                color: #FFF;
+                text-overflow: ellipsis;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                @media#{$bigtap}{
+                    font-size: 12px;
+                    margin-top: 6px;
+                    line-height: 15px;
+                }
+                @media#{$tap}{
+                    font-size: 5px;
+                    line-height: 7px;
+                }
+                @media#{$mabile}{
+                    font-size: 4px;
+                    line-height: 5px;
+                    margin-top: 3px;
+                }
+            }
+            .card_title{
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                align-self: stretch;
+                overflow: hidden;
+                color: #FFF;
+                text-overflow: ellipsis;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 40px;
+                margin-top: 16px;
+                @media#{$bigtap}{
+                    font-size: 17px;
+                    margin-top: 10px;
+                    line-height: 23px;
+                }
+                @media#{$tap}{
+                    font-size: 10px;
+                    line-height: 12px;
+                    margin-top: 5px;
+                }
+                @media#{$mabile}{
+                    font-size: 5px;
+                    line-height: 6px;
+                    margin-top: 3px;
+                }
+            }
+            .main_title{
+                display: flex;
+                align-items: center;
+                gap:0 16px;
+                margin-top: 24px;
+                @media#{$bigtap}{
+                    gap:0 10px;
+                    margin-top: 7px;
+                }
+                @media#{$tap}{
+                    gap:0 5px;
+                }
+                @media#{$mabile}{
+                    gap:0 3px;
+                    margin-top: 3px;
+                }
+                p{
+                    display: flex;
+                    align-items: center;
+                    gap:0 4px;
+                    padding: 0 4px;
+                    border-radius: 4px;
+                    background: rgba(204, 255, 51, 0.50);
+                    color: #FFF;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    @media#{$bigtap}{
+                        font-size: 12px;
+                    }
+                    @media#{$tap}{
+                        font-size: 5px;
+                        line-height: 7px;
+                        gap: 0 1px;
+                        border-radius: 1px;
+                        padding: 0 1px;
+                    }
+                    img{
+                        width: 16px;
+                        @media#{$bigtap}{
+                            width: 12px;
+                        }
+                        @media#{$tap}{
+                            width: 5px;
+                        }
+                    }
+                }
+                span{
+                    display: block;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    overflow: hidden;
+                    color: rgba(255, 255, 255, 0.50);
+                    text-overflow: ellipsis;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    @media#{$bigtap}{
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+                    @media#{$tap}{
+                        font-size: 5px;
+                        line-height: 7px;
+                    }
+                    @media#{$mabile}{
+                        font-size: 4px;
+                        line-height: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .button_a{
+        text-align: end;
+        margin-top: 128px;
+    }
+}

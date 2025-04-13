@@ -1,0 +1,131 @@
+*,li,a,p,ul{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Manrope", serif;
+    background-color: #131313;
+}
+.container{
+    max-width: 1720px;
+    margin: 0 auto;
+    @media(max-width:1760px){
+        max-width: 1560px;
+    }
+    @media(max-width:1600px){
+        max-width: 1460px;
+    }
+    @media#{$biglaptop}{
+        max-width: 1360px;
+    }
+    @media#{$laptop}{
+        max-width: 1160px;
+    }
+    @media#{$smalllaptop}{
+        max-width: 952px;
+    }
+    @media#{$bigtap}{
+        max-width: 728px;
+    }
+    @media#{$tap}{
+        max-width: 536px;
+    }
+    @media#{$bigmobile}{
+        max-width: 440px;
+    }
+    @media#{$mabile}{
+        max-width: calc(100% - 24px);
+        margin: 0 auto;
+    }
+}
+.button{
+    a{
+        text-decoration: none;
+        color: #111;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        padding: 20px 40px;
+        border-radius: 4px;
+        background: #CF3;
+        display: inline-block;
+        transition: .3s all ease;
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.10);
+            color: #FFF;
+        }
+        @media#{$bigtap}{
+            font-size: 16px;
+            padding: 16px 25px;
+        }
+        @media#{$tap}{
+            font-size: 6px;
+            line-height: 7px;
+            padding: 7px 12px;
+        }
+    }
+}
+.title{
+    color: #FFF;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 72px;
+    @media#{$smalllaptop}{
+        font-size: 46px;
+    }
+    @media#{$bigtap}{
+        font-size: 28px;
+        line-height: 35px;
+    }
+    @media#{$tap}{
+        font-size: 19px;
+        line-height: 22px;
+    }
+    @media#{$mabile}{
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+.button_a{
+    a{
+        padding: 17px 24px;
+        text-decoration: none;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.10);
+        display: inline-flex;
+        align-items: center;
+        gap:0 8px;
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        transition: .3s all ease;
+        &:hover{
+            background-color: #CF3;
+            color: #111;
+        }
+        @media#{$bigtap}{
+            padding: 12px 14px;
+            font-size: 15px;
+            gap:0 6px;
+            img{
+                width: 20px;
+            }
+        }
+        @media#{$tap}{
+            font-size: 6px;
+            line-height: 7px;
+            padding: 5px 7px;
+            gap:0 2px;
+            border-radius: 1.5px;
+            img{
+                width: 7px;
+            }
+        }
+    }
+}
+.wrapper{
+    overflow: hidden;
+    position: relative;
+}

@@ -1,0 +1,226 @@
+.VKontakte{
+    .col-6{
+        padding-right: 0;
+        padding-left: 0;
+        position: relative;
+    }
+    margin-top: 62px;
+    @media#{$mabile}{
+        margin-top: 25px;
+    }
+    &__start{
+        background: #1D1D1D;
+        &--left{
+            padding: 80px;
+            @media#{$bigtap}{
+                padding: 35px;
+            }
+            @media#{$tap}{
+                padding: 25px;
+            }
+            .main{
+                margin-top: 24px;
+                color: #FFF;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 36px;
+                @media#{$bigtap}{
+                    margin-top: 12px;
+                    font-size: 14px;
+                    line-height: 23px;
+                }
+                @media#{$tap}{
+                    font-size: 7px;
+                    line-height: 11px;
+                    margin-top: 7px;
+                }
+            }
+            .button{
+                position: absolute;
+                bottom: 80px;
+                @media#{$bigtap}{
+                    bottom: 35px;
+                }
+                @media#{$tap}{
+                    bottom: 25px;
+                }
+            }
+        }
+        &--right{
+            .vk{
+                margin-top: 20px ;
+                margin-left: 20px;
+                @media#{$smalllaptop}{
+                    width: 190px;
+                }
+                @media#{$bigtap}{
+                    width: 170px;
+                }
+                @media#{$tap}{
+                    margin-top: 6px;
+                    margin-left: 6px;
+                    width: 65px;
+                }
+            }
+            .box{
+                text-align: end;
+                padding-right: 12px;
+                position: relative;
+                .word{
+                    margin-top: -6px;
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 34px;
+                    justify-content: end;
+                    border-radius: 140.205px;
+                    background: rgba(19, 19, 19, 0.60);
+                    backdrop-filter: blur(11.216402053833008px);
+                    // max-width: 487px;
+                    gap:0 6px;
+                    color: #FFF;
+                    font-size: 22.433px;
+                    font-weight: 600;
+                    line-height: 28.041px;
+                    @media#{$smalllaptop}{
+                        padding: 28px;
+                        font-size: 19px;
+                    }
+                    @media#{$bigtap}{
+                        padding: 10px;
+                        font-size: 10px;
+                    }
+                    @media#{$tap}{
+                        padding: 10px;
+                        font-size: 7px;
+                        line-height: 9px;
+                        gap: 0 2px;
+                    }
+                    @media#{$mabile}{
+                        padding: 4px;
+                        font-size: 5px;
+                        line-height: 8px;
+                        gap: 0 2px;
+                    }
+                    img{
+                        @media#{$bigtap}{
+                            width: 35px;
+                        }
+                        // width: 35px;
+                        @media#{$tap}{
+                            width: 13px;
+                        }
+                    }
+                }
+                span{
+                    display: block;
+                    position: absolute;
+                    bottom: -6px;
+                    color: #FFF;
+                    font-size: 22.433px;
+                    font-weight: 600;
+                    line-height: 28.041px;
+                    left: 50%;
+                    transform: translateY(100%);
+                    @media#{$bigtap}{
+                        margin-top: 0;
+                        font-size: 14px;
+                    }
+                    @media#{$tap}{
+                        font-size: 7px;
+                        line-height: 9px;
+                    }
+                }
+            }
+            .right_logo{
+                margin-top: 28px;
+                display: block;
+                padding-right: 216px;
+                text-align: end;
+                img{
+                    width: 418px;
+                    @media#{$smalllaptop}{
+                        width: 390px;
+                    }
+                    @media#{$bigtap}{
+                        width: 200px;
+                    }
+                    @media#{$tap}{
+                        width: 130px;
+                    }
+                }
+            }
+            .aksiya{
+                padding-left: 80px;
+                margin-top: 22px;
+                @media#{$bigtap}{
+                    margin-top: 12px;
+                }
+            @media#{$tap}{
+                margin-top: 7px;
+            }
+                .right_discount{
+                    display: inline-flex;
+                    color: #FFF;
+                    font-size: 22.433px;
+                    font-weight: 500;
+                    line-height: 33.649px;
+                    align-items: center;
+                    gap:0 6px;
+                    padding: 34px;
+                    border-radius: 140.205px;
+                    background: rgba(19, 19, 19, 0.60);
+                    backdrop-filter: blur(11.216402053833008px);
+                    @media#{$smalllaptop}{
+                        padding: 26px;
+                        img{
+                            width: 30px;
+                        }
+                    }
+                    @media#{$bigtap}{
+                        padding: 16px;
+                        font-size: 15px;
+                        line-height: 20px;
+                        gap:0 4px;
+                        img{
+                            width: 22px;
+                        }
+                    }
+                    @media#{$tap}{
+                        padding: 10px;
+                        font-size: 7px;
+                        line-height: 10px;
+                        img{
+                            width: 10px;
+                        }
+                    }
+                }
+            }
+            .gift{
+                text-align: end;
+                p{
+                    display: inline-block;
+                    padding: 34px;
+                    border-radius: 40.21px 0px 0px 0px;
+                    background: #CF3;
+                    backdrop-filter: blur(11.216402053833008px);
+                    color: #131313;
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 33.649px;
+                    @media#{$bigtap}{
+                        padding: 15px;
+                        border-radius: 23px 0 0 0;
+                        font-size: 12px;
+                        line-height: 24px;
+                    }
+                    @media#{$tap}{
+                        padding: 10px;
+                        font-size: 7px ;
+                        line-height: 10px;
+                        border: 12px 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+}

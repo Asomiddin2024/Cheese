@@ -1,0 +1,168 @@
+.section_tabs{
+    margin-top: 200px;
+    @media#{$bigtap}{
+        margin-top: 60px;
+    }
+    @media#{$tap}{
+        margin-top: 62px;
+    }
+    @media#{$mabile}{
+        margin-top: 25px;
+    }
+    .title{
+        max-width: 995px;
+        @media#{$bigtap}{
+            max-width: 530px;
+        }
+        @media#{$tap}{
+            width: 308px;
+        }
+        @media#{$mabile}{
+            width: 255px;
+        }
+    }
+    .main{
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+        max-width: 704px;
+        margin-top: 24px;
+        @media#{$bigtap}{
+            margin-top: 12px;
+            font-size: 15px;
+            line-height: 22px;
+            max-width: 388px;
+        }
+        @media#{$tap}{
+            font-size: 7px;
+            line-height: 11px;
+            margin-top: 7px;
+            width: 218px;
+        }
+        @media#{$mabile}{
+            font-size: 4px;
+            line-height: 7px;
+            width: 95px;
+            margin-top: 5px;
+        }
+    }
+    .taps_click{
+        margin-top: 60px;
+        @media#{$bigtap}{
+            margin-top: 35px;
+        }
+        @media#{$tap}{
+            margin-top: 18px;
+        }
+        .col-7,
+        .col-5{
+            padding-right:0;
+            padding-left:0;
+        }
+        .tab_left{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            .tab_button{
+                transition: .3s all ease;
+                display: flex;
+                gap:0 16px;
+                align-items:center;
+                cursor: pointer;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+                padding: 20px 0;
+                &:last-child{
+                    border: none;
+                }
+                @media#{$bigtap}{
+                    padding: 14px 0;
+                }
+                @media#{$tap}{
+                    padding: 6px 0;
+                    gap:0 5px;
+                }
+                @media#{$mabile}{
+                    padding: 2px 0;
+                    gap: 0 4px;
+                }
+                svg{
+                    @media#{$bigtap}{
+                        width: 20px;
+                    }
+                    @media#{$tap}{
+                        width: 7px;
+                    }
+                }
+                p{
+                    transition: .3s all ease;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                    color: #FFF;
+                    text-overflow: ellipsis;
+                    font-size: 32px;
+                    font-weight: 600;
+                    line-height: 40px;
+                    @media#{$bigtap}{
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                    @media#{$tap}{
+                        font-size: 10px;
+                        line-height: 12px;
+                    }
+                    @media#{$mabile}{
+                        font-size: 7px;
+                        line-height: 7px;
+                    }
+                }
+            }
+            .active{
+                @media#{$bigtap}{
+                    padding: 14px 0 14px 14px;
+                }
+                padding: 20px 0 20px 20px;
+                @media#{$tap}{
+                    padding: 6px 0 6px 6px;
+                }
+                @media#{$mabile}{
+                    padding: 2px 0 2px 2px;
+                }
+                svg{
+                    path{
+                        transition: .3s all ease;
+                        fill:#CCFF33;
+                    }
+                }
+                p{
+                    color: #CCFF33;
+                }
+            }
+        }
+        .taps-img{
+            display: flex;
+            .tab_img{
+                transition: .3s all ease;
+                height: 620px;
+                width: 20%;
+                object-fit: cover;
+                @media#{$bigtap}{
+                    height: 384px;
+                }
+                @media#{$tap}{
+                    height: 192px;
+                }
+            }
+            .active{
+                width: 100%;
+                transition: .3s all ease;
+            }
+            .no-active{
+                width: 0;
+                transition: .3s all ease;
+            }
+        }
+    }
+}
